@@ -1,0 +1,17 @@
+version: '3'
+services:
+ app:
+     build: .
+     depends_on:
+       - pgdb
+     ports:
+     - "3000:3000"
+ pgdb:
+     image: postgres
+     volumes:
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+     environment:
+         POSTGRES_USER: edwardchandra
+         POSTGRES_DB: foreign_currency
+     ports:
+     - "5433:5432"

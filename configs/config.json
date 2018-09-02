@@ -1,0 +1,13 @@
+{
+    "database":{
+        "user":"edwardchandra",
+        "ipAddress":"pgdb",
+        "databaseName":"foreign_currency",
+        "port":"5432",
+        "pool":"100",
+        "maxIdleTimeOut":"30000"
+    },
+    "server":{
+        "port":"3000"
+    }
+}

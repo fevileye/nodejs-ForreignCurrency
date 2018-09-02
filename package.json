@@ -1,0 +1,13 @@
+{
+  "name": "foreignCurrencyBE",
+  "version": "1.0.0",
+  "main": "node index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.16.3",
+    "pg": "7.4.3",
+    "body-parser": "1.18.3"
+  }
+}
